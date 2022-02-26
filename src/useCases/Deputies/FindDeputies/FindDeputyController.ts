@@ -12,7 +12,7 @@ export class FindDeputyController {
 
         try{
             const deputy = await this.findDeputyUseCase.execute({
-                id
+                id,
             })
 
             return response.status(201).json(deputy)
