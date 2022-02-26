@@ -8,13 +8,11 @@ export class FindDeputyController {
     ) {}
 
     async handle(request: Request, response: Response): Promise<Response|undefined> {
-        const{ id, name, email } = request.body
+        const{ id } = request.body
 
         try{
             const deputy = await this.findDeputyUseCase.execute({
-                id,
-                name,
-                email
+                id
             })
 
             return response.status(201).json(deputy)
