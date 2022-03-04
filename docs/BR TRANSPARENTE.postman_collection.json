@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "cdc867c1-8321-441b-b902-8d0b9d784f7a",
+		"name": "BR TRANSPARENTE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Deputados",
+			"item": [
+				{
+					"name": "/id/despesas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/deputados/{{deputado_id}}/despesas",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"deputados",
+								"{{deputado_id}}",
+								"despesas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ (todos deputados)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/deputados",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"deputados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/deputados/{{deputado_id}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"deputados",
+								"{{deputado_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/id/frentes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/deputados/{{deputado_id}}/frentes",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"deputados",
+								"{{deputado_id}}",
+								"frentes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/id/orgaos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/deputados/{{deputado_id}}/orgaos",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"deputados",
+								"{{deputado_id}}",
+								"orgaos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
